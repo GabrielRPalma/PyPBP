@@ -5,6 +5,9 @@
 import io
 from os import path as op
 from setuptools import setup, find_packages
+from Cython.Build import cythonize # new
+import numpy as np # new
+
 
 with open('README.md') as readme_file:
     readme = readme_file.read()
@@ -54,4 +57,5 @@ setup(
     url='https://github.com/GabrielRPalma/pypbp',
     version='0.0.1',
     zip_safe=False,
+    ext_modules=cythonize(["pypbp/__init__.pyx"]),
 )

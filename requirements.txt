@@ -1,0 +1,6 @@
+numpy==1.21
+sklearn
+cython
+scipy
+pandas
+pyemd
