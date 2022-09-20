@@ -1,6 +1,7 @@
-numpy==1.21
+numpy
 sklearn
 cython
 scipy
 pandas
 pyemd
+emd
