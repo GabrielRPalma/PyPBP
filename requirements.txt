@@ -1,7 +1,8 @@
 numpy
 sklearn
-cython
+cython==0.29.30
 scipy
 pandas
 pyemd
 emd
+openpyxl
