@@ -4,8 +4,8 @@
 
 import io
 from os import path as op
-from setuptools import setup, find_packages
-from Cython.Build import cythonize # new
+from setuptools import setup, find_namespace_packages
+from Cython.Build import cythonize 
 import numpy as np # new
 
 
@@ -50,7 +50,7 @@ setup(
     include_package_data=True,
     keywords='pypbp',
     name='pypbp',
-    packages=find_packages(include=['pypbp', 'pypbp.*']),
+    packages=find_namespace_packages(include=['pypbp', 'pypbp.*']),
     package_data={'pypbp': ['data/*']},
     setup_requires=setup_requirements,
     test_suite='tests',
