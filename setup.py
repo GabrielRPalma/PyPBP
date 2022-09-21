@@ -58,5 +58,5 @@ setup(
     url='https://github.com/GabrielRPalma/pypbp',
     version='0.0.6',
     zip_safe=False,
-    ext_modules=cythonize(["pypbp/__init__.pyx"]),
+    ext_modules=cythonize("pypbp/__init__.pyx"),
 )
